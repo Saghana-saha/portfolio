@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Times new roman;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #364f75;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<h2>Saghana Thangavel</h2>
+<h3 style="background-color: rgb(226, 229, 233);">ASPIRING ENGINEER</h3>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Personal')">About</button>
+  <button class="tablinks" onclick="openTab(event, 'Skill')">Skills</button>
+  <button class="tablinks" onclick="openTab(event, 'Project')">Project</button>
+  <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
+</div>
+
+<div id="Personal" class="tabcontent">
+  <h3><u><b>ABOUT ME</b></u></h3>
+       <p> Desire to work in a challenging position in an innovative and forward-thinking company that will allow me to utilize
+        my skills and experience in a new and exciting way. </p>
+       <hr>
+       <h3><u><b>EDUCATION</b></u></h3>
+    <table border="3" width="40%">
+        <tr>
+            <th>BE ECE</th>
+            <td>Sri Eshwar College of Engineering</td>
+            <td>8.70* CGPA</td>
+        </tr>
+        <tr>
+            <th>HSC</th>
+            <td>Little Flower Convent Matriculation Higher Secondary School</td>
+            <td>86%</td>
+        </tr>
+        <tr>
+            <th>SSLC</th>
+            <td>St.Joseph Matriculation Higher Secondary School </td>
+            <td>85.4%</td>
+        </tr>
+    </table>
+    <hr>
+    <h3><b><u>ACHIEVEMENTS</u></b></h3>
+        <ul>
+            <li>
+                Won <b>THIRD PLACE</b> in project presentation at Hindusthan Institute of Technology.
+            </li>
+            <li>
+                Participated in <b>Paper presentation</b> held at Hindusthan Institute of Technology.
+            </li>
+            <li><b>Finalist</b> in <b>Smart India Hackothan.</b></li>
+            <li>Participated in <b>Internal Hackothan.</b></li>
+        </ul>
+        <hr>
+</div>
+
+<div id="Skill" class="tabcontent">
+  <h3><b><u>TECHNICAL SKILLS</b></u></h3>
+       <ul>
+        <li>C</li>
+        <li>Java</li>
+        <li>Data Structures</li>
+        <li>Unix</li>
+        <li>TCL</li>
+       </ul>
+       <hr>
+  
+</div>
+
+<div id="Project" class="tabcontent">
+
+  <h3><u><b>PROJECTS</b></u></h3>
+       <h4> IOT BASED SMART BOTTLE FOR HEALTCARE:</h4>
+        <ul> 
+            <li>
+                The main motive of this project is to help the patient in critical time by "Assessment and management of 
+                fluid and electrolyte in the saline bottle"
+            </li>
+            <li>	
+                When the saline bottle is about to empty, the blood from the body of the patient flows back into the bottle.
+            </li>
+            <li> 
+                To overcome this issue, we are here with the solution that is user-friendly as well as cost efficient.
+            </li>
+            <li>
+                We proposed an IOT based automatic alerting system where load cell is used as a weight sensor.
+            </li>
+            <li>
+                The load cell is with NODE MCU (wi-fi) module that indicates the nurses and the patient’s attender through text message.
+            </li>
+        </ul>
+        
+        
+        <h4> OUT-BUS TRACKING SYSTEM </h4>
+         <ul>
+            <li>
+                Our application focus on to providing students more convenience with the bus schedules.
+             </li>
+            <li>It provides real time bus-location information , so that student’s may not get delayed.
+            </li>
+            <li>We have integrated google map in the application.
+            </li>
+         </ul>
+        <hr>
+
+</div>
+
+<div id="Resume" class="tabcontent">
+  <h3>Resume</h3>
+      <button type="button" class="my-button" name="button">Download Resume</button>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
